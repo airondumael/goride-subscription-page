@@ -7,7 +7,6 @@ html, body {
 
 body {
     color: #fff;
-    visibility: visible !important;
     div.logo {
         margin: 1em;
         font-size: 18px;
@@ -16,6 +15,7 @@ body {
         }
     }
     div.main-container {
+        visibility: visible !important;
         background: url("../images/subscription-bg.png") no-repeat center;
         background-size: cover;
         height: 100%;

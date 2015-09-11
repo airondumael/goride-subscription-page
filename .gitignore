@@ -4,5 +4,5 @@ data/emails.txt
 config/*
 !config/index.js
 data/*
-src/app/frontend/assets/build/*
+src/frontend/assets/build/*
 !*/.gitkeep

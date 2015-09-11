@@ -5,13 +5,11 @@
   <title>{% block title %}My Site{% endblock %}</title>
 
   {% block head %}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   {% endblock %}
   <style>
     body {
-        background: #0f0 url("/assets/images/mini-subscription-bg.png") no-repeat center;
+        background: url("/assets/images/mini-subscription-bg.png") no-repeat center;
         background-size: cover;
         height: 100%;
         width: 100%;
@@ -20,7 +18,8 @@
     }
 
     div.main-container {
-        visibility: hidden;
+        opacity: 0;
+        transition: opacity .5s;
     }
 </style>
 </head>

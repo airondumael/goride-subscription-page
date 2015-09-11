@@ -1,0 +1,21 @@
+{% extends 'layouts/main.html' %}
+
+{% block title %}My Page{% endblock %}
+
+{% block head %}
+  {% parent %}
+{% endblock %}
+
+{% block content %}
+<div class="main-container">
+    <header class="main-header">
+        <div class="logo"><a href="/">GO RIDE</a></div>
+    </header>
+    <div class="screen-center">
+        <span class="help-you">
+            The biking ninjas have received your subscription!
+            They are now ready to send you with the latest updates and if they have, some cookies too!
+        <span>
+    </div>
+</div>
+{% endblock %}

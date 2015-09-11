@@ -1,0 +1,35 @@
+{
+  "name": "goride",
+  "version": "0.0.1",
+  "description": "goride.bike",
+  "main": "index.babel.js",
+  "scripts": {
+    "start": "npm run build && NODE_ENV=production node index.babel.js",
+    "dev": "NODE_ENV=development nodemon index.babel.js",
+    "build": "NODE_ENV=production webpack -p --config src/frontend/webpack.production.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^5.8.23",
+    "bluebird": "^2.10.0",
+    "body-parser": "^1.13.3",
+    "express": "^4.13.3",
+    "http-proxy": "^1.11.2",
+    "sendgrid": "^1.9.2",
+    "swig": "^1.4.2",
+    "webpack-dev-server": "^1.10.1"
+  },
+  "devDependencies": {
+    "babel-core": "^5.8.23",
+    "babel-loader": "^5.3.2",
+    "css-loader": "^0.18.0",
+    "file-loader": "^0.8.4",
+    "node-sass": "^3.3.2",
+    "sass-loader": "^2.0.1",
+    "style-loader": "^0.12.3",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.12.1"
+  }
+}

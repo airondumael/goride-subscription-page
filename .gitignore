@@ -5,3 +5,4 @@ config/*
 !config/index.js
 data/*
 src/app/frontend/assets/build/*
+!*/.gitkeep

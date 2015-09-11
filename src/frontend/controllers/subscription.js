@@ -22,7 +22,7 @@ export function post (req, res, next) {
 
         prependFile(path_to_txt, req.body.email+'\n', (err) => console.log(err))
     })
-/*
+
     Mail.send(req.body.email, 'You are now subscribed!', `
         The biking ninjas have received your subscription!
         They are now ready to send you with the latest updates
@@ -30,7 +30,7 @@ export function post (req, res, next) {
         <br><br>
         -GoRide Team
     `)
-*/
+
     res.redirect('/thankyou')
 }
 
